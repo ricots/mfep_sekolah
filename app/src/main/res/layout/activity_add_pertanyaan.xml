@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sekolah.admin.system.ui_admin.add_pertanyaan"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="18dp"
+        android:text="Kategori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/spin_kat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/idkat"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="#666"
+        app:mtf_image="@drawable/kategori"
+        >
+
+        <EditText
+            android:id="@+id/add_tanya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tambah Pertanyaan"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="#666"
+        app:mtf_image="@drawable/weight"
+        >
+
+        <EditText
+            android:id="@+id/add_bobot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bobot"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnaddtanya"
+        android:text="simpan"
+        fbutton:buttonColor="@color/fbutton_color_orange"
+        fbutton:shadowColor="@color/fbutton_color_carrot"
+        fbutton:shadowEnabled="true"
+        fbutton:shadowHeight="15dp"
+        fbutton:cornerRadius="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/persen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
